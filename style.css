@@ -1,0 +1,324 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Noto Sans', sans-serif;
+}
+button{
+    border:none;
+    outline:none;
+}
+.nav-bar{
+    width: 100%;
+    
+    overflow: hidden;
+    max-width: 100%;
+    padding: 15px 50px;
+    display: flex;
+    justify-content:space-between;
+    float: right;
+}
+
+.bar ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+
+}
+.bar li{
+    float: right;
+    font-size: 1.1rem;
+}
+.bar li a{
+    display: block;
+    text-align: center;
+    padding: 12px 30px;
+    text-decoration: none;
+    color: black;
+    
+}
+.bar li a:hover{
+   
+    border-bottom: 2px solid #FF8800;
+}
+#active{
+    border-bottom: 2px solid #FF8800;
+}
+.sign-btn button{
+    padding: 13px 30px;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: transparent;
+   color: green;
+   transition: .2s ease-in-out;
+   cursor: pointer;
+}
+.sign-btn button:first-child{
+   margin-left: 10px;
+   background-color: #FF8800;
+   color: white;
+}
+#btn-plan{
+    transition: .3s;
+    cursor: pointer;
+}
+.sign-btn button:active, #btn-plan:active{
+    opacity: .2;
+}
+.sign-btn button:last-child:hover{
+    background-color: green;
+    color: white;
+}
+.container{
+    width: 100%;
+    display: flex;
+}
+.left-container{
+    overflow: hidden;
+    flex: 50%;
+    height: 85vh;
+    
+    padding-left: 5px;
+    position: relative;
+    
+}
+.text-content{
+   float: left;
+    display: flex;
+    text-align: left;
+    font-size: 1.5rem;
+    text-shadow:0px 9px 15px rgba(0, 0, 255, .2);
+    margin-top: 100px;
+}
+.h1{
+    margin-top: 110px;
+    
+   
+    height: max-content;
+    font-size: 1.8rem;
+    color: rgba(68, 68, 235, .9);
+    text-shadow: 0px 9px 9px rgba(0, 0, 255, .2);
+}
+.data{
+    float: left;
+    width: 90%;
+    border-left: 2px solid rgba(68, 68, 235, .9);
+
+}
+.data button{
+    padding:14px 30px;
+    font-size: 1.2rem;
+    background-color: #FF8800;
+    color: white;
+    text-align: center;
+}
+
+.right-container{
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    flex: 50%;
+    height: 85vh;
+   
+    justify-content: center;
+    align-items: center;
+    padding-left: 80px;
+}
+
+
+.all-img{
+    left: 0;
+    overflow: hidden;
+    
+    bottom: 0;
+    position: absolute;
+    display: flex;
+    
+
+}
+.all-img img{
+    width:300px ;
+    
+}
+.more-pic{
+    position: absolute;
+    
+    display: flex;
+    
+    left: 450px;
+    top: 60px;
+    font-size: 1.7rem;
+    color: rgba(68, 68, 235, .9);
+}
+
+.more-pic span{
+    transition: .3s;
+    cursor: pointer;
+    margin-left: 30px;
+    padding:5px 12px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, .8);
+}
+.more-pic span:hover{
+    background-color: rgba(68, 68, 235, .9);
+    color: white;
+}
+.p-div{
+
+    border-radius: 50px;
+    padding:0 25px;
+    margin-top: 5px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, .8);
+    cursor: default;
+}
+
+.img-container{
+   
+    width: 400px;
+    height: 400px;
+    background-color: rgb(157, 180, 255, .6);
+    border-radius:53% 48% 46% 46% / 79% 82% 18% 17% ; 
+    transform: rotate(180deg);
+    box-shadow: 0px -12px 20px 1px rgba(0, 0, 255, .2);
+    
+}
+.short-back-1{
+ 
+    width: 400px;
+    height: 400px;
+    background-color: rgb(157, 180, 255, .4);
+    border-radius:53% 48% 46% 46% / 79% 82% 18% 17% ; 
+    transform: rotate(-45deg);
+    
+    box-shadow: 0px -12px 20px 1px rgba(0, 0, 255, .2);
+    
+}
+.short-back-2{
+   
+    width: 400px;
+    height: 400px;
+    background-color: yellow;
+    background: #000 url(./Images/trip.jpg) no-repeat;
+    background-size: cover;
+    
+    border-radius:53% 48% 46% 46% / 79% 82% 18% 17% ; 
+    transform: rotate(-20deg);
+    box-shadow: 0px -12px 20px 1px rgba(0, 0, 255, .2);
+}
+.circle{
+    position: absolute;
+    left: 180px;
+    top: 150px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #FF8800;
+}
+.day-remain{
+    position: absolute;
+    right:5px;
+    top: 100px;
+   border-radius: 10px;
+    text-align: left;
+    width: 200px;
+    padding: 5px 10px;
+    background-color: #fff;
+    box-shadow: 0px 5px 20px 0px rgba(0, 0, 255, .2);
+}
+hr{
+    width: 150px;
+    border: 2px solid #FF8800;
+    background-color: #FF8800;
+    margin-top: 5px;
+    float: left;
+    
+}
+.day{
+   color: rgba(68, 68, 235, .9);
+}
+.side-icon{
+    position: absolute;
+    height: 400px;
+    left:0;
+    bottom: 0;
+    padding-left: 60px;
+
+}
+.side-icon a{
+    display: block;
+    text-align: left;
+}
+.side-icon .fa{
+    color: black;
+    font-size: 2rem;
+    
+}
+
+.media, .more-icon{
+    border: 1px solid rgb(157, 180, 255, .4);
+    padding:10px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    transition: .3s;
+    color: white;
+}
+.media{
+    
+    transition: .3s;
+}
+.media:hover{
+    background-color: rgba(68, 68, 235, .9);
+    color: white;
+}
+
+.more-icon{
+   margin-top: 140px;
+   border: none;
+   
+   box-shadow: 0px 5px 20px 0px rgba(0, 0, 255, .2);
+}
+
+.share a, .mt-icon a{
+    text-decoration: none;
+}
+
+.side-icon .f{
+    padding: 10px 16px;
+    
+ }
+
+.side-icon .share{
+    background-color:  rgba(68, 68, 235, .9);
+    border-radius: 20px;
+    text-align: center;
+    padding: 5px;
+    padding-right: 20px;
+    box-shadow: -1px 5px 10px 1px rgba(0, 0, 255, .2);
+    
+}
+#share-color, .share .fa{
+    color: white;
+}
+.mt-icon .fa{
+    color: rgba(68, 68, 235, .9);
+    
+}
+
+span{
+    margin-left: 20px;
+    font-size: 1.5rem;
+    
+}
+#more-txt{
+    color:rgba(68, 68, 235, .9);
+}
+
+
+
+
